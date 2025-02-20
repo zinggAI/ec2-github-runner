@@ -64,7 +64,7 @@ async function startEc2Instance(label, githubRegistrationToken) {
     InstanceMarketOptions: buildMarketOptions(),
     BlockDeviceMappings: [
     {
-      DeviceName: '/dev/sda1',
+      DeviceName: "/dev/sdh",
       Ebs: {
         DeleteOnTermination: true,
         SnapshotId: "snap-0cea39e80265a11bf",
